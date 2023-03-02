@@ -1,6 +1,6 @@
 
 /**
- * Copyright (c) Geraldo Novais.
+ * Copyright (c) Geraldo Novais
  *
  */
 
