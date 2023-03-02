@@ -1,5 +1,10 @@
 
 /**
+ * Copyright (c) Geraldo Novais.
+ *
+ */
+
+/**
  * Converts the first character of a string to uppercase
  * 
  * @return {string} The new string with the first character in uppercase
