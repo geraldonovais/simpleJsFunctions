@@ -23,5 +23,27 @@ var camelize = function (text) {
     }).ucfirst();
 }
 
+/**
+ * Removes from the object elements that contain null values
+ * 
+ * It interacts in all properties of a json object by eliminating
+ * those that have null value. It does this recursively when a given 
+ * property contains another associated object. 
+ * 
+ * @param {object} obj 
+ * 
+ */
+function deleteNull(obj) {
+
+    for (var key in obj) {
+
+        if (obj[key] === null) {
+            delete obj[key];
+        } else if (typeof (obj[key]) === "object") {
+            deleteNull(obj[key]);
+        }
+    }
+}
+
 // Exporting variables and functions
 export { camelize };
